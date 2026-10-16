@@ -6,6 +6,7 @@ Features
 - Home page
 - Product images
 - Contact page
+- Responsive pages
 
 Technologies Used
 - HTML
