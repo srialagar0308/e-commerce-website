@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra</title>
+
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+        integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="index.html" style="text-decoration:none; color:black;"><h1>Nostra</h1></a>
+
+        <div class="navbar-links">
+            <p class="navbar-link"><a href="index.html">Home</a></p>
+            <p class="navbar-link"><a href="collections.html">Collections</a></p>
+            <p class="navbar-link"><a href="contact.html">Contact</a></p>
+        </div>
+
+        <div class="navbar-menu-toggle" onclick="showNavbar()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Side Navbar -->
+    <div class="side-navbar">
+        <p style="text-align: right;" onclick="closeNavbar()">
+            <i class="fa-solid fa-xmark"></i>
+        </p>
+
+        <div class="side-navbar-links">
+            <p class="side-navbar-link"><a href="index.html">Home</a></p>
+            <p class="side-navbar-link"><a href="collections.html">Collections</a></p>
+            <p class="side-navbar-link"><a href="contact.html">Contact</a></p>
+        </div>
+    </div>
+
+    <!-- Products -->
+    <div class="product-section">
+        <form class="product-search">
+            <input type="text" id="search" placeholder="Search" onkeyup="show()">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </form>
+
+        <div class="products" id="products">
+
+            <div class="products-box">
+                <img src="images/chanel1.webp" style="width:100%; height:100%;">
+                <p>Grey Dress</p>
+            </div>
+
+            <div class="products-box">
+                <img src="images/chanel9.webp" style="width:100%; height:100%;">
+                <p>Brown Dress</p>
+            </div>
+
+            <div class="products-box">
+                <img src="images/chanel6.webp" style="width:100%; height:100%;">
+                <p>Black Dress</p>
+            </div>
+
+
+            <div class="products-box">
+                <img src="images/chanel11.webp" style="width:100%; height:100%;">
+                <p>Red Dress</p>
+            </div>
+
+
+            <div class="products-box">
+                <img src="images/chanel5.webp" style="width:100%; height:100%;">
+                <p>Yellow Dress</p>
+            </div>
+
+            <div class="products-box">
+                <img src="images/chanel4.webp" style="width:100%; height:100%;">
+                <p>White Dress</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footer-container ">
+            <div class="footer-box-1">
+                <h2 class="headingText">Nostra</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat dolorem quasi maiores ullam
+                    deleniti non qui ducimus dignissimos in doloribus!</p>
+
+                <div class="footer-icon-container">
+                    <i class="fa-brands fa-instagram" style="color:white;"></i>
+                    <i class="fa-brands fa-twitter" style="color:white;"></i>
+                    <i class="fa-brands fa-facebook" style="color:white;"></i>
+                </div>
+            </div>
+        </div>
+        <p>@2026 Nostra.com</p>
+    </div>
+
+    <!-- <button onclick="show()">Show</button> -->
+
+    <script src="collection.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
